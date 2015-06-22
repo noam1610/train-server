@@ -1,0 +1,33 @@
+{
+  "name": "Subsiders",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "n": {
+      "type": "string"
+    },
+    "exit": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": 
+        {
+          "accessType": "READ",
+          "permission": "ALLOW",
+          "principalType": "ROLE",
+          "principalId": "$owner"
+        },
+  "methods": []
+}
+
+
+       
